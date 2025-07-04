@@ -1,0 +1,15 @@
+import java.util.Scanner;
+class alphabet {
+    public static void main(String[] args) {
+        Scanner shan = new Scanner(System.in);
+        System.out.print("Enter the data : ");
+       char let = shan.next().charAt(0);
+        if ((let >= 'A' && let <= 'Z') || (let >= 'a' && let <= 'z')) {
+            System.out.println("Alphabet");
+        } else if (let >= '0' && let <= '9') {
+            System.out.println("Digit");
+        } else {
+            System.out.println("Special Character");
+        }
+    }
+}
